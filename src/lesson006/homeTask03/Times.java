@@ -24,8 +24,8 @@ public class Times {
         Date date = calendar.getTime();
         System.out.println(dateFormat.format(date));
 
-        String birthday = "05 08 1992 14:15:10:000";
-        String nextBirthday = "05 08 2021 14:15:10:000";
+        String birthday = "05 08 1992 14:15:10";
+        String nextBirthday = "05 08 2022 14:15:10";
 
         DateTimeFormatter dtFormater = DateTimeFormatter.ofPattern("dd MM yyyy HH:mm:ss");
 
@@ -34,6 +34,9 @@ public class Times {
         Period period = Period.between(startDate, endDate);
         System.out.println("Вам исполнилось " + period.getYears() + " лет, " + period.getMonths() + " месяцев, " +
                 period.getDays() + " дней, ");
+
+
+        // Подскажите, как можно так вычесть часы, минуты?
 
 
 //        Duration duration = Duration.between(startDate, endDate);
@@ -76,6 +79,8 @@ public class Times {
 //
 //        int daysBeforeBirthday = (int)((dateMyNextBirthday.getTime() - date.getTime()) / (24 * 60 * 60 * 1000)) ;
 //        System.out.println("До дня рождения осталось: " + daysBeforeBirthday + " дней");
+//
+
         }
 }
 
