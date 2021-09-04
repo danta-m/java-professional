@@ -1,10 +1,6 @@
 package lesson001.homeTask01;
 
-import lesson001.practice.Animal;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Iterator;
 
 public class List {
